@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+/* MENU*/
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.logo{
+    width: 15%;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    height: 0;
+}
+.container_itens{
+    margin-top: 10px;
+}
+nav{
+    display: flex;
+   
+}
+.titulo{
+    color: #2A7AE4;
+}
+.container_busca{
+    margin-left: 30px;
+}
+#txtBusca{
+    width: 400px;
+    position: relative;
+    border-radius: 20px;
+    top: 15px;
+    height: 20px;
+    background: #F5F5F5;
+    border-color:  #F5F5F5;
+}
+.lupa{
+    position: absolute;
+    left:65%;
+    top: 34px;
+    opacity: 0.5;
+}
+/*MOBILE CABEÇALHO*/
+
+@media (max-width:600px){
+    .container{
+        padding: 1vh;
+        justify-content: space-between;
+    }
+    #txtBusca{
+        display:none;
+    }
+    .lupa{
+        margin-left: 50px;
+        width: 27px;
+        top: 55px;
+    }
+    .titulo, .titulo2{
+        font-size: 35px;
+    }
+}
+/*SESSÃO DE LOGIN*/
+
+.login{
+    margin-top: 100px;
+    background-color: #E5E5E5;
+    height: 400px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_login{
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.email, 
+.senha{
+    width: 266px;
+    height: 20px;
+    font-family: 'Raleway';
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.button{
+    width: 286px;
+    padding:  12px 0 12px 0;
+    text-align: center;
+    margin-left: 0;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition:  0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0062cc;
+    text-decoration:underline;
+  }
+
+/*CONTATO*/
+.contato{
+    display: flex;
+    background-color:  #EAF2FD;
+    justify-content: space-around;
+    height: 268px;
+    padding: 64px;
+}
+.contato_logo{
+    display: flex;
+}
+.nav_list ul{
+    width: 25vh;
+    line-height: 50px;
+    list-style: none;
+   font-family: 'raleway';
+}
+li a{
+    color: black;
+    text-decoration: none;
+}
+li a:hover{
+    text-decoration: underline;
+
+}
+
+ .tituloContato {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  input, textarea{
+    width: 466px;
+    height: 20px;
+    font-family: 'Raleway';
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  .input2{
+    height: 82px;
+
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  button {
+    margin-left: -335px;
+    padding: 20px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition:  0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0062cc;
+  }
+  
+/*FOOTER*/
+
+footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 20px;
+  }
+  .footer{
+   text-align: center;
+  }
+
+  @media (max-width:600px){ 
+.nav_list ul{
+    margin-left: 30px;
+}
+.contato{
+    flex-wrap: wrap;
+    height: 100%;
+}
+input, textarea{
+    width: 300px;
+}
+button{
+   margin-left: 0;
+}
+  }
