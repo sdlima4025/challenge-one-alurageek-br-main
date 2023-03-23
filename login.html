@@ -23,8 +23,8 @@
     <section class="login" >
 
             <h1 class="titulo_login">Iniciar Sessão</h1>
-            <input class="email" type="email" required placeholder="Escreva seu email" maxlength="30">
-            <input  class="senha" type="password" required placeholder="Escreva sua senha" maxlength="6">
+            <input class="email" type="email" required placeholder="Escreva seu email" minlength="4" required>
+            <input  class="senha" type="password" required placeholder="Escreva sua senha" minlength="4"  maxlength="6" required>
             <a href="index.html" class="button">Entrar</a>
 
        
@@ -59,8 +59,8 @@
         <div class="caixa-contato">
             <h1 class="tituloContato">Fale conosco</h1>
             <form>
-                <input type="text" required placeholder="Nome">
-                <textarea class="input2" type="text" placeholder="Escreva sua mensagem"></textarea>
+                <input type="text"  placeholder="Nome" required minlength="4">
+                <textarea class="input2" type="text" placeholder="Escreva sua mensagem" minlength="10" maxlength="50" required></textarea>
                 <button>Enviar mensagem</button>
             </form>
         </div>
