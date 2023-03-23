@@ -1,6 +1,14 @@
 { 
 "produtos":[
-
+  {
+  "name": "Alura",
+  "imgUrl": "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
+  "price": "200.00",
+  "id": 1,
+  "alt": "product",
+  "section": "star wars",
+  "description": "voluptas voluptas voluptas voluptas, class debit"
+  }
 ],
 "categorias": [
 

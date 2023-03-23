@@ -1,7 +1,7 @@
 // GET 
 
 const listaProdutos = () => {
-    fetch("http://127.0.0.1:5500/index.html")
+    fetch("hhttp://localhost:3000/produtos")
     .them(resposta => resposta.json())
     .catch(error => console.log(error))
 }
