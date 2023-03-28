@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-lt-installed="true" lx-checker-enable="true">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/imagens/search_files/reponsivo.css">
+    <title>CoffeGeek</title>
+    <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
+
+</head>
+<body cz-shortcut-listen="true">
+    <div class="container">
+    <nav>
+        <h1 class="titulo">Coffe</h1>
+        <h1 class="titulo2">Geek</h1>
+        <nav class="container_busca">
+            <input type="text" id="txtBusca" placeholder="O que deseja encontrar?">
+            <img class="lupa" src="./assets/imagens/search_files/search.png" id="btnBusca" alt="Buscar">
+        </nav>
+    </nav>
+    <div>
+        <a  class="login" href="login.html">Login</a>
+    </div>
+    </div>
+    <header class="cabecalho">
+        <img class="cabecalho_img" src="./assets/imagens/search_files/principal.jfif" alt="">
+    <div class="cabecalho_text">
+        <h1>Março Promocional</h1>
+        <h2>Produtos selecionados com 33% de desconto</h2>
+        <a class="cabecalho_button" href="#">Ver consoles</a>
+
+    </div>
+    </header>
+    <div class="titlleProdutos">
+    <h1 class="starWars">Star Wars</h1>
+    <a href="#" class="verMais_titulo">Ver tudo</a>
+    </div>
+    
+    <section class="produtos1" data-product>
+    <div class="produtos_card">
+        <img class="img1" src="./assets/imagens/search_files/starwars(1).svg" alt="starwars">
+        <p class="nomeProduto">Caneca star wars</p>
+        <p class="valorProduto">R$ 60,00</p>
+        <a class="link_card" href="#">Ver produto</a>
+    </div>
+</section>
+
+<section class="contato">
+  <div class="contato_logo">
+      <h1 class="titulo">Coffe</h1>
+      <h2>Geek</h2>
+  </div>
+  <nav class="nav_list">
+      <ul>
+          <li>
+              <a href="#">Quem somos</a>
+          </li>
+          <li><a href="#">Politica de Privacidade</a></li>
+          <li><a href="#">Programa Fidelidade</a></li>
+          <li><a href="#">Nossas lojas</a></li>
+          <li><a href="#">Quero ser franqueado</a></li>
+          <li><a href="#">Anuncie aqui</a></li>
+      </ul>
+  </nav>
+
+  <div class="caixa-contato">
+      <h1 class="tituloContato">Fale conosco</h1>
+      <form action="">
+          <input type="text" placeholder="Nome" minlength="4" required>
+          <textarea type="textarea" placeholder="Escreva sua Menssagem" class="input2" minlength="10" maxlength="50" required></textarea>
+          <button >Enviar Mensagem</button>
+      </form>
+  </div>
+</section>
+<footer>
+<div class="footer"> 
+<h5>"© 2023"
+  <br>
+  "Desenvolvido por Sérgio Lima"
+  <br>
+  "Todos os direitos reservados."
+</h5>
+</div>  
+</footer>
+
+<script src="services/produtos-services.js"></script>
+</body>
+</html>
