@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="container_itens">
+                <h1 class="titulo">Coffe</h1>
+                <h1 class="titulo2">Geek</h1>
+                <nav class="container_busca">
+                    <input type="text" id="txtBusca" placeholder="O que deseja encontrar?..."/>
+                    <img class="lupa" src="../assets/imagens/search_files/search.png" id="btnBusca" alt="Buscar"/>
+                </nav>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="login" >
+
+            <h1 class="titulo_login">Iniciar Sessão</h1>
+            <input name="username"  id="email" class="email" type="email" placeholder="Escreva seu email" minlength="4" required>
+            <input name="password" class="senha" type="password" placeholder="Escreva sua senha" minlength="4"  maxlength="8" required>
+            <a href="./listaProdutos.html" class="button" >Entrar</a>
+    </section>
+
+    <section class="contato">
+        <div class="contato_logo">
+            <h1 class="titulo">Coffe</h1>
+            <h1 class="titulo2">Geek</h1>
+        </div>
+        <nav class="nav_list">
+            <ul>
+                <li>
+                    <a href="#">Quem somos nós</a>
+                </li>
+                <li>
+                    <a href="#">Política de privacidade</a>
+                </li>
+                <li>
+                    <a href="#">Programa fidelidade</a>
+                </li>
+                <li>
+                    <a href="#">Nossas lojas</a>
+                </li>
+                <li>
+                    <a href="#">Quero ser franqueado</a>
+                </li>
+                <li>
+                    <a href="#">Anuncie aqui</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="caixa-contato">
+            <h1 class="tituloContato">Fale conosco</h1>
+            <form>
+                <input type="text"  placeholder="Nome" required minlength="4">
+                <textarea class="input2" type="text" placeholder="Escreva sua mensagem" minlength="10" maxlength="50" required></textarea>
+                <button>Enviar mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <h5>&copy; 2023<br> Desenvolvido por Sérgio Lima<br> Todos os direitos reservados.</h5>
+        </div>
+    </footer>
+<script type="module" src="../controllers/loginController.js"></script>
+  
+</body>
+
+
+</html>

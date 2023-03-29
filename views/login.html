@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/login.css">
-    <title>LOGIN</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <title>Edite Produtos</title>
 </head>
 <body>
     <header>
@@ -15,7 +15,7 @@
                 <h1 class="titulo2">Geek</h1>
                 <nav class="container_busca">
                     <input type="text" id="txtBusca" placeholder="O que deseja encontrar?..."/>
-                    <img class="lupa" src="./assets/imagens/search_files/search.png" id="btnBusca" alt="Buscar"/>
+                    <img class="lupa" src="../assets/imagens/search_files/search.png" id="btnBusca" alt="Buscar"/>
                 </nav>
             </nav>
         </div>
@@ -24,9 +24,9 @@
     <section class="login" >
 
             <h1 class="titulo_login">Iniciar Sessão</h1>
-            <input class="email" type="email" placeholder="Escreva seu email" minlength="4" required>
-            <input  class="senha" type="password" placeholder="Escreva sua senha" minlength="4"  maxlength="8" required>
-            <a href="listaProdutos.html" class="button">Entrar</a>
+            <input name="username"  id="email" class="email" type="email" placeholder="Escreva seu email" minlength="4" required data-email>
+            <input name="password" class="senha" type="password" placeholder="Escreva sua senha" minlength="4"  maxlength="8" required data-senha>
+            <a href="./listaProdutos.html" class="button" data-logar>Entrar</a>
     </section>
 
     <section class="contato">
@@ -71,5 +71,34 @@
             <h5>&copy; 2023<br> Desenvolvido por Sérgio Lima<br> Todos os direitos reservados.</h5>
         </div>
     </footer>
+
+   <script type="module" src="../controllers/loginController.js"></script>
 </body>
+
+
+
+<!-- LOGIN -->
+<!-- <script > 
+
+var usuarios = [
+    {"login": "bcf", "senha": "bcf"},
+    {"login": "mamae", "senha": "abacaxi"},
+    {"login": "papai", "senha": "melancia"},
+];
+
+function Login() {
+    var usuario = document.getElementsByName('username')[0].value.toLowerCase();
+    var senha = document.getElementsByName('password')[0].value;
+
+    for (var u in usuarios) {
+        var us = usuarios[u];
+        if (us.login === usuario && us.senha === senha) {
+            window.location = "./listaProdutos.html";
+            return true;
+        }
+    }
+    alert("Dados incorretos, tente novamente.");
+    return false; -->
+}
+</script>
 </html>
